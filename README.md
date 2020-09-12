@@ -1,3 +1,5 @@
+Look at these wireframes to get a visual idea of the issue description: https://www.figma.com/file/WBCCixXq03BiekeuvCOqjq/SSD-Website?node-id=0%3A1. If you want to make a change to the wireframe, go ahead.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
