@@ -1,13 +1,12 @@
 import React from "react";
-import OfficerCard from "./OfficerCard";
-import officersDataObj from "./officers.js";
+import OfficerCard from "./OfficerCard/OfficerCard";
+import officersData from "./officers.js";
 import module_styles from "./OfficersBanner.module.css";
 
 function OfficersBanner() {
   //for later: use hooks to update number of rows depending on screen size
   const numRows = 2;
   const cardsPerRow = 3;
-  const officersData = Object.values(officersDataObj);
 
   return (
     <section className={module_styles["officers-banner-container"]}>

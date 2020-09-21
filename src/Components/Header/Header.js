@@ -1,23 +1,9 @@
 import React from "react";
 import module_styles from "./Header.module.css";
+import nav_links from "./header_links.json";
 
 //for testing purposes
 import VarunPic from "../../assets/Varun.jpg";
-
-const nav_links = [
-  {
-    text: "Home",
-    href: "/",
-  },
-  {
-    text: "Events",
-    href: "/events",
-  },
-  {
-    text: "Contact",
-    href: "/contact",
-  },
-];
 
 function Header() {
   return (
