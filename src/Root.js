@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ContactPage from "./Components/ContactPage/ContactPage";
 import HomePage from "./Components/HomePage/HomePage";
 
 //https://reacttraining.com/react-router/web/guides/quick-start
@@ -12,9 +13,7 @@ export default function Root() {
         <Route exact path="/events">
           <div>events page goes here</div>
         </Route>
-        <Route exact path="/contact">
-          <div>contact page goes here</div>
-        </Route>
+        <Route exact path="/contact" component={ContactPage}></Route>
       </Switch>
     </BrowserRouter>
   );
