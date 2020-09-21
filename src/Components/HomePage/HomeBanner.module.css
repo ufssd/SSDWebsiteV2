@@ -1,0 +1,19 @@
+.home-banner-container {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: red;
+}
+
+.home-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.home-banner-text {
+  margin: auto 0px;
+  font-size: var(--title-font-size);
+}
