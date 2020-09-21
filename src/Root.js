@@ -11,7 +11,13 @@ export default function Root() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/events">
-          <div>events page goes here</div>
+          <div>
+            events page goes here
+            <br />
+            <a href="/">Home</a>
+            <br />
+            <a href="/contact">Contact</a>
+          </div>
         </Route>
         <Route exact path="/contact" component={ContactPage}></Route>
       </Switch>
