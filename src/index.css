@@ -1,5 +1,6 @@
 * {
   --title-font-size: 2.5rem;
+  --header-height: 80px;
 }
 
 body {
@@ -14,4 +15,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.page-content {
+  transform: translateY(var(--header-height));
+  width: 100%;
+  height: auto;
 }

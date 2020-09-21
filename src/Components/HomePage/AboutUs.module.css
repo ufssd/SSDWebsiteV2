@@ -3,17 +3,17 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 80vh;
 }
 
 .about-us-title {
   font-size: var(--title-font-size);
   margin-top: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .about-us-article {
   width: 100%;
-  min-height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
