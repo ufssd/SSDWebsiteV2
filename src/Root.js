@@ -1,9 +1,7 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ContactPage from "./Components/ContactPage/ContactPage";
+import HomePage from "./Components/HomePage/HomePage";
 
 //https://reacttraining.com/react-router/web/guides/quick-start
 
@@ -11,15 +9,17 @@ export default function Root() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <div>Home page goes here</div>
-        </Route>
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/events">
-          <div>events page goes here</div>
+          <div>
+            events page goes here
+            <br />
+            <a href="/">Home</a>
+            <br />
+            <a href="/contact">Contact</a>
+          </div>
         </Route>
-        <Route exact path="/contact">
-          <div>contact page goes here</div>
-        </Route>
+        <Route exact path="/contact" component={ContactPage}></Route>
       </Switch>
     </BrowserRouter>
   );
