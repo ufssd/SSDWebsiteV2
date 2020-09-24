@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import ContactPage from "./Components/ContactPage/ContactPage";
-import HomePage from "./Components/HomePage/HomePage";
+import ContactPage from "./components/ContactPage/ContactPage.js";
+import HomePage from "./components/HomePage/HomePage";
 
 //https://reacttraining.com/react-router/web/guides/quick-start
 
