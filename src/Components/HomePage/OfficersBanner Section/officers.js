@@ -1,4 +1,4 @@
-import VarunPic from "../../../assets/Varun.jpg";
+import VarunPic from "../../../assets/Varun.png";
 import AndrewPic from "../../../assets/Andrew.jpg";
 import RangerPic from "../../../assets/Ranger.jpg";
 import EricPic from "../../../assets/Eric.jpg";

@@ -1,7 +1,7 @@
 import React from "react";
 import ContactCard from "../ContactCard/ContactCard";
 import RangerPic from "../../../assets/Ranger.jpg";
-import VarunPic from "../../../assets/Varun.jpg";
+import VarunPic from "../../../assets/Varun.png";
 import module_styles from "./ContactBanner.module.css";
 
 function ContactBanner() {
