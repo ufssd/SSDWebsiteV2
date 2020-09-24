@@ -3,7 +3,7 @@ import AndrewPic from "../../../assets/Andrew.jpg";
 import RangerPic from "../../../assets/Ranger.jpg";
 
 // these need to be changed to jpg and sized appropriately before shipping
-import EricPic from "../../../assets/Eric.png";
+import EricPic from "../../../assets/Eric.jpg";
 import KatherinePic from "../../../assets/Katherine.png";
 import TianruiPic from "../../../assets/Tianrui.png";
 
