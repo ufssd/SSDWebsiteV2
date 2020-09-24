@@ -7,7 +7,7 @@ function Footer() {
     <footer className={module_styles["Footer-container"]}>
       {social_links.map((elem) => (
         <div className={module_styles["Footer-social-container"]}>
-          <a href={elem.href}>
+          <a href={elem.href} target="_blank" rel="noopener noreferrer">
             <img
               src={elem.logo}
               alt=""

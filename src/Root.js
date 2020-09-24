@@ -12,9 +12,9 @@ export default function Root() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/events" component={EventsPage}/>
-        <Route exact path="/contact" component={ContactPage}></Route>
-        <Route component={Error404Page}/>
+        <Route exact path="/events" component={EventsPage} />
+        <Route exact path="/contact" component={ContactPage} />
+        <Route component={Error404Page} />
       </Switch>
     </BrowserRouter>
   );
