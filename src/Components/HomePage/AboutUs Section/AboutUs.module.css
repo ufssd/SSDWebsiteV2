@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 80vh;
 }
 
 .about-us-title {
@@ -25,11 +24,7 @@
   width: 500px;
 }
 
-.about-us-image-container {
-  border: 1px solid black;
-}
-
 .about-us-image {
-  width: 200px;
-  height: 200px;
+  height: 250px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }

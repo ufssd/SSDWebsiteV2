@@ -1,20 +1,22 @@
 //for testing purposes
-import VarunPic from "../../assets/Varun.jpg";
+import Discord from "../../assets/Discord.svg";
+import Facebook from "../../assets/Facebook.svg";
+import Github from "../../assets/Github.svg";
 
 export default [
   {
     name: "Discord",
-    logo: VarunPic,
-    href: "/",
+    logo: Discord,
+    href: "https://www.discord.gg/5SyB3yx",
   },
   {
     name: "Facebook",
-    logo: VarunPic,
-    href: "/",
+    logo: Facebook,
+    href: "https://www.facebook.com/groups/ufssd",
   },
   {
     name: "GitHub",
-    logo: VarunPic,
-    href: "/",
+    logo: Github,
+    href: "https://www.github.com/ufssd",
   },
 ];

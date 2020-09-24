@@ -1,24 +1,28 @@
 import React from "react";
 import module_styles from "./Header.module.css";
 import nav_links from "./header_links.json";
+import ButtonBase from '@material-ui/core/ButtonBase';
+import {Link} from 'react-router-dom';
 
 //for testing purposes
-import VarunPic from "../../assets/Varun.jpg";
+import SSDLogo from "../../assets/SSDLogo.png";
 
 function Header() {
   return (
     <nav className={module_styles["Header-container"]}>
       <div className={module_styles["Header-logo-container"]}>
-        <img src={VarunPic} alt="" className={module_styles["Header-logo"]} />
+        <ButtonBase component={Link} to='/'>
+          <img src={SSDLogo} alt="" className={module_styles["Header-logo"]} />
+        </ButtonBase>
         <h3 className={module_styles["Header-title"]}>
           Society of Software Developers
         </h3>
       </div>
       <div className={module_styles["Header-links-container"]}>
         {nav_links.map((elem) => (
-          <a href={elem.href} className={module_styles["Header-link"]}>
+          <Link to={elem.href} className={module_styles["Header-link"]}>
             {elem.text}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>

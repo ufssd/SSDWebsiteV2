@@ -4,7 +4,7 @@ import module_styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <div className={module_styles["Footer-container"]}>
+    <footer className={module_styles["Footer-container"]}>
       {social_links.map((elem) => (
         <div className={module_styles["Footer-social-container"]}>
           <a href={elem.href}>
@@ -19,7 +19,7 @@ function Footer() {
           </h3>
         </div>
       ))}
-    </div>
+    </footer>
   );
 }
 
