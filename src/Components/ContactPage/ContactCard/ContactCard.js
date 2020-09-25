@@ -3,6 +3,20 @@ import copy from "clipboard-copy";
 import module_styles from "./ContactCard.module.css";
 
 function ContactCard({ title, description, imgSrc, email }) {
+  const copyEmail = (e) => {
+    // copies the email prop into the user's clipboard
+    copy(email);
+
+    // makes sure the ::after pseudo element's text is 'Copied!' while the user still hovers over it
+    e.target.classList.add(module_styles["click-hover"]);
+  };
+
+  const resetText = (e) => {
+    // resets the ::after pseudo element's text to 'Copy to clipboard'
+    if (e.target.classList.contains(module_styles["click-hover"]))
+      e.target.classList.remove(module_styles["click-hover"]);
+  };
+
   return (
     <div className={module_styles["contact-card"]}>
       <a
@@ -17,7 +31,8 @@ function ContactCard({ title, description, imgSrc, email }) {
       <h3 className={module_styles["contact-card-title"]}>{title}</h3>
       <h5
         className={module_styles["contact-card-description"]}
-        onClick={() => copy(email)}
+        onClick={copyEmail}
+        onMouseLeave={resetText}
       >
         {description}
       </h5>

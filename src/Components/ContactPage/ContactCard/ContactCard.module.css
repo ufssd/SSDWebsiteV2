@@ -85,6 +85,10 @@
   animation: snap 0.01s linear forwards;
 }
 
+.contact-card-description.click-hover::after {
+  content: "Copied!" !important;
+}
+
 @keyframes snap {
   0% {
     transform: translate(-50%, 50%);
