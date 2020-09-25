@@ -11,14 +11,14 @@ import Footer from "./Components/Footer/Footer";
 export default function Root() {
   return (
     <BrowserRouter>
-      <Header key={"header"} />
-      <Switch key={"page-content"}>
+      <Header />
+      <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/events" component={EventsPage} />
         <Route exact path="/contact" component={ContactPage} />
         <Redirect to="/" />
       </Switch>
-      <Footer key={"footer"} />
+      <Footer />
     </BrowserRouter>
   );
 }
