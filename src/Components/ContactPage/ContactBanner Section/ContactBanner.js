@@ -9,14 +9,14 @@ function ContactBanner() {
     <div className={module_styles["Contact-banner-container"]}>
       <div className={module_styles["Contact-banner-wrapper"]}>
         <ContactCard
-          title="ufssd.org@gmail.com"
-          description="Ranger - Officer of Communications"
+          title="Ranger - Officer of Communications"
+          description="ufssd.org@gmail.com"
           email="ufssd.org@gmail.com"
           imgSrc={RangerPic}
         />
         <ContactCard
-          title="vpuri@ufl.edu"
-          description="Varun - President"
+          title="Varun - President"
+          description="vpuri@ufl.edu"
           email="vpuri@ufl.edu"
           imgSrc={VarunPic}
         />

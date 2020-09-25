@@ -5,8 +5,11 @@ import module_styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={module_styles["Footer-container"]}>
-      {social_links.map((elem) => (
-        <div className={module_styles["Footer-social-container"]}>
+      {social_links.map((elem, index) => (
+        <div
+          className={module_styles["Footer-social-container"]}
+          key={`${elem.name}-${index}-footer-container`}
+        >
           <a href={elem.href} target="_blank" rel="noopener noreferrer">
             <img
               src={elem.logo}

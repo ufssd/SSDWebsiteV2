@@ -1,4 +1,5 @@
 import React from "react";
+import copy from "clipboard-copy";
 import module_styles from "./ContactCard.module.css";
 
 function ContactCard({ title, description, imgSrc, email }) {
@@ -14,7 +15,10 @@ function ContactCard({ title, description, imgSrc, email }) {
         </div>
       </a>
       <h3 className={module_styles["contact-card-title"]}>{title}</h3>
-      <h5 className={module_styles["contact-card-description"]}>
+      <h5
+        className={module_styles["contact-card-description"]}
+        onClick={() => copy(email)}
+      >
         {description}
       </h5>
     </div>
