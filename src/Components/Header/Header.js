@@ -22,8 +22,12 @@ function Header() {
           </h3>
         </div>
         <div className={module_styles["Header-links-container"]}>
-          {nav_links.map((elem) => (
-            <Link to={elem.href} className={module_styles["Header-link"]}>
+          {nav_links.map((elem, index) => (
+            <Link
+              to={elem.href}
+              className={module_styles["Header-link"]}
+              key={`${elem.text}-${index}-header-link`}
+            >
               {elem.text}
             </Link>
           ))}

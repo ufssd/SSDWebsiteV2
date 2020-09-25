@@ -1,4 +1,3 @@
-//for testing purposes
 import Discord from "../../assets/Discord.svg";
 import Facebook from "../../assets/Facebook.svg";
 import Github from "../../assets/Github.svg";
