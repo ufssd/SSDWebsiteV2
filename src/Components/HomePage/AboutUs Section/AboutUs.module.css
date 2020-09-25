@@ -28,6 +28,7 @@
 }
 
 .about-us-image {
-  height: 250px;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  height: 380px;
+  transform: rotate(0.5deg);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
