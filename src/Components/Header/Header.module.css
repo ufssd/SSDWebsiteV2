@@ -1,3 +1,8 @@
+.Header-nav {
+  width: 100%;
+  height: var(--header-height);
+}
+
 .Header-container {
   position: fixed;
   z-index: 999;
@@ -14,7 +19,7 @@
 
 .Header-box {
   width: 100%;
-  height: var(--header-height);
+  height: 100%;
 }
 
 .Header-logo-container {

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import module_styles from "./Header.module.css";
 import nav_links from "./header_links.json";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -7,8 +7,8 @@ import SSDLogo from "../../assets/SSDLogo.png";
 
 function Header() {
   return (
-    <Fragment>
-      <nav className={module_styles["Header-container"]}>
+    <nav className={module_styles["Header-nav"]}>
+      <div className={module_styles["Header-container"]}>
         <div className={module_styles["Header-logo-container"]}>
           <ButtonBase component={Link} to="/">
             <img
@@ -28,9 +28,9 @@ function Header() {
             </Link>
           ))}
         </div>
-      </nav>
-      <div className={module_styles["Header-box"]} />
-    </Fragment>
+      </div>
+      <span className={module_styles["Header-box"]} />
+    </nav>
   );
 }
 
