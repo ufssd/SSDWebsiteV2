@@ -1,16 +1,12 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import ContactMain from "./ContactMain";
+import ContactBanner from "./ContactBanner Section/ContactBanner";
 import module_styles from "./ContactPage.module.css";
 
 function ContactPage() {
   return (
-    <div className={module_styles["Contact-Page"]}>
-      <Header />
-      <ContactMain />
-      <Footer />
-    </div>
+    <main className={module_styles["Contact-Page"]}>
+      <ContactBanner />
+    </main>
   );
 }
 

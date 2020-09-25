@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import HomeMain from "./HomeMain";
+import AboutUs from "./AboutUs Section/AboutUs";
+import HomeBanner from "./HomeBanner Section/HomeBanner";
+import OfficersBanner from "./OfficersBanner Section/OfficersBanner";
 import module_styles from "./HomePage.module.css";
 
 function HomePage() {
   return (
-    <div className={module_styles["Home-page"]}>
-      <Header />
-      <HomeMain />
-      <Footer />
-    </div>
+    <main className={module_styles["Home-page"]}>
+      <HomeBanner />
+      <AboutUs />
+      <OfficersBanner />
+    </main>
   );
 }
 

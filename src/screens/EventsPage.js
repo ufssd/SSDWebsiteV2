@@ -4,8 +4,6 @@ import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 //local files
 import EventPost from "../Components/EventPost";
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
 import eventData from "./../sampleData/sampleEvents.js";
 
 //inspiration for UI: https://www.canva.com/learn/
@@ -100,38 +98,27 @@ export default function EventsPage() {
   const [events, setEvents] = React.useState([]);
 
   const isXs = useMediaQuery(useTheme().breakpoints.down("xs"));
-  const [footerReference, setFooterReference] = React.useState(null);
 
   return (
-    <React.Fragment>
-      <Header />
-      <main
-        className={classes.events}
-        style={{
-          marginTop: 100,
-          minHeight:
-            "calc(100vh - 144px - " +
-            (footerReference ? footerReference.scrollHeight : 0) +
-            "px",
-        }}
-      >
-        <Typography component="h1" variant={isXs ? "h4" : "h3"}>
-          <b>Events</b>
-        </Typography>
-        <Typography variant={isXs ? "body1" : "h5"} className={classes.spacing}>
-          Find information about our GBMs, guest speaker events, and more
-        </Typography>
-        <Grid container spacing={4}>
-          {events.map((eventpost) => (
-            <Grid key={eventpost._id} item xs={12} sm={6} xl={4}>
-              <EventPost {...eventpost} />
-            </Grid>
-          ))}
-        </Grid>
-      </main>
-      <div ref={setFooterReference}>
-        <Footer home={false} />
-      </div>
-    </React.Fragment>
+    <main
+      className={classes.events}
+      style={{
+        minHeight: "calc(100vh - 144px)",
+      }}
+    >
+      <Typography component="h1" variant={isXs ? "h4" : "h3"}>
+        <b>Events</b>
+      </Typography>
+      <Typography variant={isXs ? "body1" : "h5"} className={classes.spacing}>
+        Find information about our GBMs, guest speaker events, and more
+      </Typography>
+      <Grid container spacing={4}>
+        {events.map((eventpost) => (
+          <Grid key={eventpost._id} item xs={12} sm={6} xl={4}>
+            <EventPost {...eventpost} />
+          </Grid>
+        ))}
+      </Grid>
+    </main>
   );
 }
