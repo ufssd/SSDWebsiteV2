@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AboutUs from "../Components/HomePage/AboutUs Section/AboutUs";
+import AboutUs from "../Components/HomePage/AboutUs";
 import HomeBanner from "../Components/HomePage/HomeBanner Section/HomeBanner";
 import OfficersBanner from "../Components/HomePage/OfficersBanner Section/OfficersBanner";
 import module_styles from "./HomePage.module.css";

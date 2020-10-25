@@ -5,13 +5,9 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 //local files
 import EventPost from "../Components/EventPost";
 import eventData from "./../sampleData/sampleEvents.js";
-
-//inspiration for UI: https://www.canva.com/learn/
-//getting maximum from JSON objects: https://codeburst.io/javascript-finding-minimum-and-maximum-values-in-an-array-of-objects-329c5c7e22a2
-
 import { makeStyles } from "@material-ui/core/styles";
 
-export const pageStyles = makeStyles((theme) => ({
+const pageStyles = makeStyles((theme) => ({
   events: {
     marginTop: 40,
     marginBottom: 40,
