@@ -1,10 +1,11 @@
 import React from "react";
+import ButtonBase from '@material-ui/core/ButtonBase';
+import Typography from '@material-ui/core/Typography';
 import {makeStyles} from "@material-ui/core/styles";
 import Discord from "../assets/Discord.svg";
 import Facebook from "../assets/Facebook.svg";
 import Github from "../assets/Github.svg";
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Typography from '@material-ui/core/Typography';
+import Zoom from "../assets/Zoom.svg";
 
 const social_links = [
   {
@@ -21,6 +22,11 @@ const social_links = [
     name: "GitHub",
     logo: Github,
     href: "https://www.github.com/ufssd",
+  },
+  {
+    name: "Zoom Room",
+    logo: Zoom,
+    href: "https://ufl.zoom.us/j/99441879822",
   },
 ];
 
