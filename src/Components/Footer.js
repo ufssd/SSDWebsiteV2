@@ -38,7 +38,8 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#035496",
-    padding:16
+    paddingTop:16,
+    paddingBottom:16
   },
   FooterSocialContainer: {
     margin: "0px 30px",
