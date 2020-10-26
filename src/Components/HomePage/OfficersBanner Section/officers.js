@@ -24,12 +24,12 @@ export default [
     imgSrc: AndrewPic,
   },
   {
-    name: "Ranger",
+    name: "Ranger Chenore",
     position: "Communications Officer",
     imgSrc: RangerPic,
   },
   {
-    name: "Katherine",
+    name: " Katherine Chan",
     position: "Program Officer",
     imgSrc: KatherinePic,
   },

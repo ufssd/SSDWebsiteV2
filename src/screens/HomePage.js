@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import AboutUs from "./AboutUs Section/AboutUs";
-import HomeBanner from "./HomeBanner Section/HomeBanner";
-import OfficersBanner from "./OfficersBanner Section/OfficersBanner";
+import AboutUs from "../Components/HomePage/AboutUs";
+import HomeBanner from "../Components/HomePage/HomeBanner Section/HomeBanner";
+import OfficersBanner from "../Components/HomePage/OfficersBanner Section/OfficersBanner";
+import ContactBanner from "../Components/Contact/ContactBanner";
 import module_styles from "./HomePage.module.css";
 
 function HomePage() {
@@ -18,6 +19,7 @@ function HomePage() {
       <HomeBanner />
       <AboutUs />
       <OfficersBanner />
+      <ContactBanner/>
     </main>
   );
 }
