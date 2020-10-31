@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     alignItems: "center",
     textAlign: 'center',
-    maxWidth: 1200
+    maxWidth: 1000,
+    margin: 'auto'
   }
 }));
 
@@ -40,7 +41,7 @@ function ContactBanner() {
         direction="row"
         justify="center"
         alignItems="center"
-        className={classes.ContactBannerWrapper}
+        className={classes.ContactBannerContainer}
       >
         <ContactCard id='ranger-contact-card'
           description="Email our officer of communications"
