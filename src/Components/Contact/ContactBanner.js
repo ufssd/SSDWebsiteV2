@@ -1,18 +1,18 @@
 import React from "react";
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import ContactCard from "./ContactCard";
 import RangerPic from "../../assets/Ranger.jpg";
 import VarunPic from "../../assets/Varun.png";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   contactBanner: {
     width:"100%",
     textAlign: 'center',
     marginBottom: 20
   },
   title: {
+    ...theme.typography.h1,
     fontSize: "var(--title-font-size)",
     marginTop: 40,
     marginBottom: 20
@@ -30,13 +30,13 @@ const useStyles = makeStyles({
     flexDirection: "row",
     justifyContent: "space-evenly"
   }
-});
+}));
 
 function ContactBanner() {
   const classes = useStyles();
   return (
     <section className={classes.contactBanner}>
-      <Typography component='h1' variant='h1' className={classes.title}>Contact</Typography>
+      <h2 className={classes.title}>Contact</h2>
       <div className={classes.ContactBannerContainer}>
         <Grid
           container

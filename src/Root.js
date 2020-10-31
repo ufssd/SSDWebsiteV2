@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "./screens/HomePage";
-import EventsPage from "./screens/EventsPage";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer";
 
@@ -13,7 +12,6 @@ export default function Root() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/events" component={EventsPage} />
         <Redirect to="/" />
       </Switch>
       <Footer />

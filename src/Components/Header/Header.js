@@ -1,11 +1,10 @@
 import React from "react";
 import module_styles from "./Header.module.css";
-import nav_links from "./header_links.json";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { Link } from "react-router-dom";
 import SSDLogo from "../../assets/SSDLogo.png";
 
-function Header() {
+export default function Header() {
   return (
     <nav className={module_styles["Header-nav"]}>
       <div className={module_styles["Header-container"]}>
@@ -21,6 +20,7 @@ function Header() {
             Society of Software Developers
           </h3>
         </div>
+        {/*
         <div className={module_styles["Header-links-container"]}>
           {nav_links.map((elem, index) => (
             <Link
@@ -32,10 +32,9 @@ function Header() {
             </Link>
           ))}
         </div>
+        */}
       </div>
       <span className={module_styles["Header-box"]} />
     </nav>
   );
 }
-
-export default Header;

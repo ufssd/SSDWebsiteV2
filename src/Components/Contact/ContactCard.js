@@ -1,6 +1,6 @@
 import React from "react";
 import copy from "clipboard-copy";
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
@@ -102,29 +102,3 @@ function ContactCard({ name, description, imgSrc, email }) {
 }
 
 export default ContactCard;
-
-/*
-    <Paper className={module_styles["contact-card"]}>
-      <div>
-        <a
-          className={module_styles["contact-img-container"]}
-          href={`mailto:${email}`}
-        >
-          <img src={imgSrc} alt="" className={module_styles["contact-img"]} />
-          <div className={module_styles["contact-img-overlay"]}>
-            <h1 className={module_styles["contact-img-overlay-text"]}>Email</h1>
-          </div>
-        </a>
-      </div>
-      <div>
-        <h5
-          className={module_styles["contact-card-title"]}
-          onClick={copyEmail}
-          onMouseLeave={resetText}
-          >
-          {description}
-        </h5>
-        <h3 className={module_styles["contact-card-description"]}>{title}</h3>
-      </div>
-    </Paper>
-*/

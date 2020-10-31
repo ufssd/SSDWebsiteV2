@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import AboutUs from "../Components/HomePage/AboutUs";
-import HomeBanner from "../Components/HomePage/HomeBanner Section/HomeBanner";
-import OfficersBanner from "../Components/HomePage/OfficersBanner Section/OfficersBanner";
-import ContactBanner from "../Components/Contact/ContactBanner";
+import AboutUs from "../Components/AboutUs Section/AboutUs.js";
+import HomeBanner from "../Components/HomeBanner.js";
+import OfficersBanner from "../Components/OfficersBanner Section/OfficersBanner.js";
+import ContactBanner from "../Components/Contact/ContactBanner.js";
 import module_styles from "./HomePage.module.css";
 
-function HomePage() {
+export default function HomePage() {
   useEffect(() => {
     document.title = "Society of Software Developers";
     window.scrollTo({
@@ -23,5 +23,3 @@ function HomePage() {
     </main>
   );
 }
-
-export default HomePage;

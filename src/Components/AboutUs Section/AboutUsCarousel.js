@@ -1,9 +1,10 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@material-ui/core';
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from '@material-ui/core/Typography';
 import SpeakerEventPhoto from './../../assets/InfoTechSpeakerEvent.jpg';
 import SSDGroupPhoto from './../../assets/SSDGroupPhoto.jpg';
-import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   description: {
@@ -25,12 +26,12 @@ export default function AboutUsCarousel() {
   var items = [
     {
       name: "infotech",
-      description: "SSD members at InfoTech speaker series",
+      description: "SSD after a tech talk from BridgeRock Datas",
       photo: SSDGroupPhoto
     },
     {
       name: "group pic",
-      description: "SSD at a talk from ___",
+      description: "SSD members at InfoTech speaker series",
       photo: SpeakerEventPhoto
     }
   ]
@@ -49,7 +50,7 @@ function Item(props) {
     <Paper>
       <img alt="" src={props.item.photo} className={classes.photo} />
       <div className={classes.descriptionContainer}>
-        <p className={classes.description}>{props.item.description}</p>
+        <Typography className={classes.description}>{props.item.description}</Typography>
       </div>
     </Paper>
   )
