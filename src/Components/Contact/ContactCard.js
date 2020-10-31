@@ -14,7 +14,6 @@ import CopyIcon from '@material-ui/icons/FileCopy';
 const useStyles = makeStyles((theme) => ({
   contactCardWrapper: {
     display: 'flex',
-    maxWidth: 380,
     width:'100%',
   },
   contactCard: {
