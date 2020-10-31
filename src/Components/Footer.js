@@ -52,7 +52,6 @@ const useStyles = makeStyles({
   },
   FooterSocialDescription: {
     margin: 0,
-    fontSize: "1.3rem",
     color: "white",
     width: "max-content"
   }
