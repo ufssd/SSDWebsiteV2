@@ -35,19 +35,20 @@ function ContactBanner() {
     <section className={classes.contactBanner}>
       <h2 className={classes.title}>Contact</h2>
       <Grid
+        id='contact-card-grid-container'
         container
         direction="row"
         justify="center"
         alignItems="center"
         className={classes.ContactBannerWrapper}
       >
-        <ContactCard
+        <ContactCard id='ranger-contact-card'
           description="Email our officer of communications"
           name="Ranger"
           email="ufssd.org@gmail.com"
           imgSrc={RangerPic}
         />
-        <ContactCard
+        <ContactCard id='varun-contact-card'
           description="Email the president directly"
           name="Varun"
           email="vpuri@ufl.edu"
