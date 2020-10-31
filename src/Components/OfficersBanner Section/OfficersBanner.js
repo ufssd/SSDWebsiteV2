@@ -8,7 +8,6 @@ import officersData from "./officers.js";
 const useStyles = makeStyles((theme) => ({
   officersBannerContainer: {
     width: "100%",
-    minHeight: "80vh",
     marginBottom: 15,
     display: "flex",
     flexDirection: "column",
