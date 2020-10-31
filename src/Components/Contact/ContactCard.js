@@ -15,11 +15,12 @@ const useStyles = makeStyles((theme) => ({
   contactCardWrapper: {
     display: 'flex',
     maxWidth: 380,
-    width:'100%'
+    width:'100%',
   },
   contactCard: {
     maxWidth: 380,
-    width:'100%'
+    width:'100%',
+    margin: 'auto'
   },
   details: {
     display: 'flex',

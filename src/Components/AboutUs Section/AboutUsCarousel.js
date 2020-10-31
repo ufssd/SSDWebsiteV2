@@ -1,12 +1,16 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import { Paper } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from '@material-ui/core/Typography';
 import SpeakerEventPhoto from './../../assets/InfoTechSpeakerEvent.jpg';
 import SSDGroupPhoto from './../../assets/SSDGroupPhoto.jpg';
 
 const useStyles = makeStyles((theme) => ({
+  carouselContainer: {
+    textAlign: 'center',
+    maxWidth: "100vw",
+    width: 450
+  },
   description: {
     margin: 0,
     color: 'white'
@@ -17,8 +21,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 8,
     paddingBottom: 8,
   },
+  item: {
+    maxWidth: "100vw",
+    width: 450
+  },
   photo: {
-    maxWidth: 450
+    width: "inherit"
   }
 }));
 
@@ -36,22 +44,22 @@ export default function AboutUsCarousel() {
     }
   ]
   return (
-    <Carousel autoPlay={false}>
-      {
-        items.map((item, i) => <Item key={i} item={item} />)
-      }
-    </Carousel>
+    <div className={useStyles().carouselContainer}>
+      <Carousel autoPlay={false}>
+        {items.map((item, i) => <Item key={i} item={item} />)}
+      </Carousel>
+    </div>
   )
 }
 
 function Item(props) {
   const classes = useStyles();
   return (
-    <Paper>
+    <div className={classes.item}>
       <img alt="" src={props.item.photo} className={classes.photo} />
       <div className={classes.descriptionContainer}>
         <Typography className={classes.description}>{props.item.description}</Typography>
       </div>
-    </Paper>
+    </div>
   )
 }

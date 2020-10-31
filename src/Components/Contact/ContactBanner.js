@@ -9,26 +9,23 @@ const useStyles = makeStyles((theme) => ({
   contactBanner: {
     width:"100%",
     textAlign: 'center',
-    marginBottom: 20
+    marginBottom: 20,
+    maxWidth: "100vw"
   },
   title: {
     ...theme.typography.h1,
     fontSize: "var(--title-font-size)",
-    marginTop: 40,
-    marginBottom: 20
+    marginBottom: 20,
+    marginTop: 0
   },
   ContactBannerContainer: {
-    display: "flex",
-    alignItems: "center",
-    width: "100%",
-    minHeight: "100%",
-    textAlign: 'center'
-  },
-  ContactBannerWrapper: {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    textAlign: 'center',
+    maxWidth: 1200
   }
 }));
 
@@ -37,29 +34,26 @@ function ContactBanner() {
   return (
     <section className={classes.contactBanner}>
       <h2 className={classes.title}>Contact</h2>
-      <div className={classes.ContactBannerContainer}>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={2}
-          className={classes.ContactBannerWrapper}
-        >
-          <ContactCard
-            description="Email our officer of communications"
-            name="Ranger"
-            email="ufssd.org@gmail.com"
-            imgSrc={RangerPic}
-          />
-          <ContactCard
-            description="Email the president directly"
-            name="Varun"
-            email="vpuri@ufl.edu"
-            imgSrc={VarunPic}
-          />
-        </Grid>
-      </div>
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        className={classes.ContactBannerWrapper}
+      >
+        <ContactCard
+          description="Email our officer of communications"
+          name="Ranger"
+          email="ufssd.org@gmail.com"
+          imgSrc={RangerPic}
+        />
+        <ContactCard
+          description="Email the president directly"
+          name="Varun"
+          email="vpuri@ufl.edu"
+          imgSrc={VarunPic}
+        />
+      </Grid>
     </section>
   );
 }

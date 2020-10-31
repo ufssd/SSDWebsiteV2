@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import {makeStyles} from "@material-ui/core/styles";
 import Discord from "../assets/Discord.svg";
 import Facebook from "../assets/Facebook.svg";
@@ -37,12 +38,10 @@ const useStyles = makeStyles({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#035496",
-    paddingTop:16,
-    paddingBottom:16
+    backgroundColor: "#035496"
   },
   FooterSocialContainer: {
-    margin: "0px 30px",
+    padding: "8px 30px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
@@ -54,7 +53,8 @@ const useStyles = makeStyles({
   FooterSocialDescription: {
     margin: 0,
     fontSize: "1.3rem",
-    color: "white"
+    color: "white",
+    width: "max-content"
   }
 });
 
@@ -62,24 +62,30 @@ function Footer() {
   const classes = useStyles();
   return (
     <footer className={classes.FooterContainer}>
-      {social_links.map((elem, index) => (
-        <ButtonBase
-          className={classes.FooterSocialContainer}
-          key={`${elem.name}-${index}-footer-container`}
-          href={elem.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={elem.logo}
-            alt={elem.name + "logo"}
-            className={classes.FooterSocialLogo}
-          />
-          <Typography component ='h3' className={classes.FooterSocialDescription}>
-            {elem.name}
-          </Typography>
-        </ButtonBase>
-      ))}
+      <Grid container style={{maxWidth:450}}>
+        {social_links.map((elem, index) => (
+          <ButtonBase
+            className={classes.FooterSocialContainer}
+            key={`${elem.name}-${index}-footer-container`}
+            href={elem.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            component={Grid}
+            item
+            xs={6}
+            sm={3}
+          >
+            <img
+              src={elem.logo}
+              alt={elem.name + "logo"}
+              className={classes.FooterSocialLogo}
+              />
+            <Typography component ='h3' className={classes.FooterSocialDescription}>
+              {elem.name}
+            </Typography>
+          </ButtonBase>
+        ))}
+      </Grid>
     </footer>
   );
 }
