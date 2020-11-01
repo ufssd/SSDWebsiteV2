@@ -3,6 +3,7 @@ import module_styles from "./Header.module.css";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { Link } from "react-router-dom";
 import SSDLogo from "../../assets/SSDLogo.png";
+import Typography from '@material-ui/core/Typography';
 
 export default function Header() {
   return (
@@ -16,23 +17,10 @@ export default function Header() {
               className={module_styles["Header-logo"]}
             />
           </ButtonBase>
-          <h3 className={module_styles["Header-title"]}>
+          <Typography component='h3' className={module_styles["Header-title"]}>
             Society of Software Developers
-          </h3>
+          </Typography>
         </div>
-        {/*
-        <div className={module_styles["Header-links-container"]}>
-          {nav_links.map((elem, index) => (
-            <Link
-              to={elem.href}
-              className={module_styles["Header-link"]}
-              key={`${elem.text}-${index}-header-link`}
-            >
-              {elem.text}
-            </Link>
-          ))}
-        </div>
-        */}
       </div>
       <span className={module_styles["Header-box"]} />
     </nav>

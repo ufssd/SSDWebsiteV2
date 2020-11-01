@@ -37,8 +37,8 @@
 }
 
 .Header-title {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
 }
 
 .Header-links-container {
