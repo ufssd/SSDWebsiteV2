@@ -38,7 +38,8 @@ const useStyles = makeStyles({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#035496"
+    backgroundColor: "#035496",
+    position: 'relative'
   },
   FooterSocialContainer: {
     padding: "8px 30px",
@@ -54,6 +55,11 @@ const useStyles = makeStyles({
     margin: 0,
     color: "white",
     width: "max-content"
+  },
+  snake: {
+    position: "absolute",
+    bottom: 8,
+    right: 8
   }
 });
 
@@ -78,13 +84,16 @@ function Footer() {
               src={elem.logo}
               alt={elem.name + "logo"}
               className={classes.FooterSocialLogo}
-              />
+            />
             <Typography component ='h3' className={classes.FooterSocialDescription}>
               {elem.name}
             </Typography>
           </ButtonBase>
         ))}
       </Grid>
+      <span aria-label="snake-emoji" component="span" role="img" className={classes.snake}>
+        🐍
+      </span>
     </footer>
   );
 }
