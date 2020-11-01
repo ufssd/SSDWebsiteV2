@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
   carouselContainer: {
     textAlign: 'center',
     maxWidth: "100vw",
-    width: 450
+    width: 450,
+    borderRadius: 6
   },
   description: {
     margin: 0,
@@ -45,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%"
   },
   photo: {
-    width: "inherit"
+    width: "inherit",
+    borderRadius: 6
   }
 }));
 
@@ -69,7 +71,12 @@ export default function AboutUsCarousel() {
   ]
   return (
     <div className={useStyles().carouselContainer}>
-      <Carousel autoPlay={false}>
+      <Carousel
+        autoPlay={true}
+        animation='slide'
+        timeout={300}
+        interval={5000}
+      >
         {items.map((item, i) => <Item key={i} item={item} />)}
       </Carousel>
     </div>
