@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   contactCard: {
     maxWidth: 380,
     width:'100%',
-    margin: 'auto'
+    margin: '8px auto'
   },
   details: {
     display: 'flex',

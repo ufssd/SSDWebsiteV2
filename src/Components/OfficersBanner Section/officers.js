@@ -20,7 +20,7 @@ export default [
   },
   {
     name: "Andrew Kennedy",
-    position: "Treasury",
+    position: "Treasurer",
     imgSrc: AndrewPic,
   },
   {

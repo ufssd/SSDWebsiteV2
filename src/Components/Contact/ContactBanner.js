@@ -4,6 +4,7 @@ import ContactCard from "./ContactCard";
 import RangerPic from "../../assets/Ranger.jpg";
 import VarunPic from "../../assets/Varun.png";
 import { makeStyles } from "@material-ui/core/styles";
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   contactBanner: {
@@ -11,12 +12,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     marginBottom: 20,
     maxWidth: "100vw"
-  },
-  title: {
-    ...theme.typography.h1,
-    fontSize: "var(--title-font-size)",
-    marginBottom: 20,
-    marginTop: 0
   },
   ContactBannerContainer: {
     width: "100%",
@@ -34,7 +29,7 @@ function ContactBanner() {
   const classes = useStyles();
   return (
     <section className={classes.contactBanner}>
-      <h2 className={classes.title}>Contact</h2>
+      <Typography component='h2' variant='h2'>Contact</Typography>
       <Grid
         id='contact-card-grid-container'
         container

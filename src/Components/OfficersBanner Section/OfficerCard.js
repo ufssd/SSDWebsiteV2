@@ -11,7 +11,6 @@ const useStyles = makeStyles({
     margin: "20px 0px",
     textAlign: 'center'
   },
-  
   officerImgContainer: {
     width: "10rem",
     height: "10rem",
@@ -19,17 +18,14 @@ const useStyles = makeStyles({
     overflow: "hidden",
     boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
   },
-  
   officerImg: {
     width: "100%",
     height: "100%"
   },
-  
   officerName: {
     marginTop: 8,
     fontSize: "1.5rem"
   },
-  
   officerPosition: {
     margin: 0,
     fontSize: ".85rem"

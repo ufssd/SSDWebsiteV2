@@ -5,12 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import AboutUsCarousel from './AboutUsCarousel.js';
 
 const useStyles = makeStyles((theme) => ({
-  aboutUsTitle: {
-    fontSize: "var(--title-font-size)",
-    marginTop: 40,
-    marginBottom: 20
-  },
-  
   aboutUsArticle: {
     width: "100%",
     display: "flex",
@@ -18,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "space-evenly"
   },
-  
   aboutUsDescription: {
     width: 500,
     textAlign: "center",
@@ -38,8 +31,8 @@ function AboutUs() {
       alignItems="center"
       component='section'
     >
-      <Grid item xs={12} style={{textAlign: 'center'}}>
-        <Typography component='h1' variant='h1' className={classes.aboutUsTitle}>What We Do</Typography>
+      <Grid item xs={12} style={{textAlign: 'center', marginTop:16}}>
+        <Typography component='h2' variant='h2'>What We Do</Typography>
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
         <Typography component='h3' variant='body1' className={classes.aboutUsDescription}>
