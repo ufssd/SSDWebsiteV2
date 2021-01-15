@@ -22,6 +22,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     maxWidth: 1000,
     margin: 'auto'
+  },
+  divider: {
+    backgroundColor: '#59b1f9',
+    width: 80,
+    height: 5,
+    marginBottom: 10
   }
 }));
 
@@ -30,6 +36,9 @@ function ContactBanner() {
   return (
     <section className={classes.contactBanner}>
       <Typography component='h2' variant='h2'>Contact</Typography>
+      <center>
+        <div className={classes.divider}></div>
+      </center>
       <Grid
         id='contact-card-grid-container'
         container

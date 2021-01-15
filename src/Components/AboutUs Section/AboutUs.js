@@ -8,16 +8,36 @@ const useStyles = makeStyles((theme) => ({
   aboutUsArticle: {
     width: "100%",
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
+    textAlign: 'left'
   },
   aboutUsDescription: {
+    maxWidth: '100vw',
     width: 500,
     textAlign: "center",
     paddingLeft: 12,
     paddingRight: 12,
-    marginBottom: 20
+    marginBottom: 20,
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: 'calc(100vw - 18px)'
+    }
+  },
+  divider: {
+    backgroundColor: '#59b1f9',
+    width: 80,
+    height: 5,
+    marginBottom: 10
+  },
+  titleContainer: {
+    textAlign: 'center',
+    marginTop:16
+  },
+  dividerContainer: {
+    marginBottom: 16,
+    justifyContent: 'center',
+    display: 'grid'
   }
 }));
 
@@ -30,9 +50,13 @@ function AboutUs() {
       justify="center"
       alignItems="center"
       component='section'
+      spacing={0}
     >
-      <Grid item xs={12} style={{textAlign: 'center', marginTop:16}}>
-        <Typography component='h2' variant='h2'>What We Do</Typography>
+      <Grid item xs={12} className={classes.titleContainer}>
+        <Typography component='h2' variant='h2' gutterBottom>What We Do</Typography>
+      </Grid>
+      <Grid item xs={12} className={classes.dividerContainer}>
+        <div className={classes.divider}></div>
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
         <Typography component='h3' variant='body1' className={classes.aboutUsDescription}>

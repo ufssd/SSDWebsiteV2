@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center"
   },
   divider: {
-    backgroundColor: '#ffba35',
+    backgroundColor: '#59b1f9',
     width: 80,
     height: 5,
     marginBottom: 10
