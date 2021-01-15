@@ -41,8 +41,8 @@ export default function HomeBanner() {
             Software Development and Design
           </Typography>
         </div>
-        <Typography variant='p' component='h2'>Fall 2020 Meetings</Typography>
-        <Typography className={classes.meetingInfo}>Wednesdays, 6:15pm over Zoom</Typography>
+        <Typography variant='p' component='h2'>Spring 2021 Meetings</Typography>
+        <Typography className={classes.meetingInfo}>Tuesdays, 6:15pm over Zoom</Typography>
       </div>
     </section>
   );
