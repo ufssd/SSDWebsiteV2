@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   officerCard: {
     display: "flex",
     flexDirection: "column",
@@ -16,7 +16,11 @@ const useStyles = makeStyles({
     height: "10rem",
     borderRadius: "50% !important",
     overflow: "hidden",
-    boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+    boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+    [theme.breakpoints.down('xs')]: {
+      width: "6rem",
+      height: "6rem",
+    }
   },
   officerImg: {
     width: "100%",
@@ -28,9 +32,11 @@ const useStyles = makeStyles({
   },
   officerPosition: {
     margin: 0,
-    fontSize: ".85rem"
+    fontSize: ".85rem",
+    lineHeight: 1.3,
+    marginTop: 6
   }
-});
+}));
 
 
 function OfficerCard({ officerName, officerPosition, imgSrc }) {

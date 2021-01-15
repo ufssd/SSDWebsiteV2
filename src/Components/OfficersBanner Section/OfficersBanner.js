@@ -19,7 +19,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center"
-  }  
+  },
+  divider: {
+    backgroundColor: '#ffba35',
+    width: 80,
+    height: 5,
+    marginBottom: 10
+  }
 }));
 
 function OfficersBanner() {
@@ -29,6 +35,7 @@ function OfficersBanner() {
   return (
     <section id="officers-section" className={classes.officersBannerContainer}>
       <Typography component='h2' variant='h2'>Officers</Typography>
+      <div className={classes.divider}></div>
       <Grid container className={classes.officerCardContainer}>
         {[...Array(officersData.length).keys()].map((card_index) => {
           const officerInfo = officersData[card_index];
