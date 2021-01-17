@@ -69,10 +69,9 @@ function Footer() {
     <footer className={classes.FooterContainer}>
       <Grid container style={{maxWidth:450}}>
         {social_links.map((elem, index) => (
-          <Grid item  xs={6} sm={3}>
+          <Grid item  xs={6} sm={3} key={`${elem.name}-${index}-footer-container`}>
             <ButtonBase
               className={classes.FooterSocialContainer}
-              key={`${elem.name}-${index}-footer-container`}
               href={elem.href}
               target="_blank"
               rel="noopener noreferrer"
