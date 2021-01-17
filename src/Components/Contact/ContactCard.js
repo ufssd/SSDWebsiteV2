@@ -74,7 +74,7 @@ function ContactCard({ name, description, imgSrc, email }) {
             src={imgSrc}
             title="Live from space album cover"
           />
-          <Typography style={{marginLeft: 12, fontSize:'1.5rem'}}>
+          <Typography color="textPrimary" style={{marginLeft: 12, fontSize:'1.5rem'}}>
             {name}
           </Typography>
         </div>

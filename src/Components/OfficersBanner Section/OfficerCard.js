@@ -9,7 +9,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
     alignItems: "center",
     margin: "20px 0px",
-    textAlign: 'center'
+    textAlign: 'center',
+    lineHeight: 1.2
   },
   officerImgContainer: {
     width: "10rem",
@@ -46,8 +47,8 @@ function OfficerCard({ officerName, officerPosition, imgSrc }) {
       <div className={classes.officerImgContainer}>
         <img src={imgSrc} alt={officerName + " picture"} className={classes.officerImg} />
       </div>
-      <Typography component='h3' variant='h5' className={classes.officerName}>{officerName}</Typography>
-      <Typography component='h5' variant='overline' className={classes.officerPosition}>{officerPosition}</Typography>
+      <Typography color="textPrimary" component='h3' variant='h5' className={classes.officerName}>{officerName}</Typography>
+      <Typography color="textPrimary" component='h5' variant='overline' className={classes.officerPosition}>{officerPosition}</Typography>
     </Grid>
   );
 }

@@ -35,7 +35,7 @@ function ContactBanner() {
   const classes = useStyles();
   return (
     <section className={classes.contactBanner}>
-      <Typography component='h2' variant='h2'>Contact</Typography>
+      <Typography color="textPrimary" component='h2' variant='h2'>Contact</Typography>
       <center>
         <div className={classes.divider}></div>
       </center>

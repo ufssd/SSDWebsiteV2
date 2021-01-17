@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 12,
     marginBottom: 20,
     [theme.breakpoints.down('xs')]: {
-      maxWidth: 'calc(100vw - 18px)'
+      maxWidth: 'calc(100vw - 24px)'
     }
   },
   divider: {
@@ -53,13 +53,13 @@ function AboutUs() {
       spacing={0}
     >
       <Grid item xs={12} className={classes.titleContainer}>
-        <Typography component='h2' variant='h2' gutterBottom>What We Do</Typography>
+        <Typography color="textPrimary" component='h2' variant='h2' gutterBottom>What We Do</Typography>
       </Grid>
       <Grid item xs={12} className={classes.dividerContainer}>
         <div className={classes.divider}></div>
       </Grid>
       <Grid item xs={12} sm={6} component='article' className={classes.aboutUsArticle}>
-        <Typography component='h3' variant='body1' className={classes.aboutUsDescription}>
+        <Typography color="textPrimary" component='h3' variant='body1' className={classes.aboutUsDescription}>
           The Society of Software Developers is focused on helping members learn
           the principles of software design and apply them to real-world
           applications.
