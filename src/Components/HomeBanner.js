@@ -2,21 +2,23 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from '@material-ui/core/Typography';
 import SplashImage from './../assets/SplashScreen.jpg';
+import ScrollDownIcon from "./ScrollDownIcon.js";
 
 const useStyles = makeStyles({
   homeBannerContainer: {
     width: "100%",
-    minHeight: "calc(100vh - var(--header-height))",
+    minHeight: "100vh",
     backgroundImage: "url(" + SplashImage + ")",
     textAlign: 'center',
-    backgroundPosition: "15%"
+    backgroundPositionX: "15%",
+    backgroundPositionY: "center"
   },
   homeBanner: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    minHeight: "calc(100vh - var(--header-height))",
+    minHeight: "100vh",
     margin: "auto 0px",
     color: "white"
   },
@@ -41,8 +43,11 @@ export default function HomeBanner() {
             Software Development and Design
           </Typography>
         </div>
-        <Typography variant='p' component='h2'>Spring 2021 Meetings</Typography>
-        <Typography className={classes.meetingInfo}>Tuesdays, 6:15pm over Zoom</Typography>
+        <div>
+          <Typography variant='inherit' component='h2'>Spring 2021 Meetings</Typography>
+          <Typography className={classes.meetingInfo}>Tuesdays, 6:15pm over Zoom</Typography>
+        </div>
+        <ScrollDownIcon />
       </div>
     </section>
   );
