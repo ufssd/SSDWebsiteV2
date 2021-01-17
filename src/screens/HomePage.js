@@ -1,12 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AboutUs from "../Components/AboutUs Section/AboutUs.js";
 import HomeBanner from "../Components/HomeBanner.js";
 import OfficersBanner from "../Components/OfficersBanner Section/OfficersBanner.js";
 import ContactBanner from "../Components/Contact/ContactBanner.js";
-import module_styles from "./HomePage.module.css";
+import {makeStyles} from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  homePage: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: theme.palette.background.default
+  }
+}));
 
 export default function HomePage() {
-  useEffect(() => {
+  React.useEffect(() => {
     document.title = "Society of Software Developers";
     window.scrollTo({
       top: 0,
@@ -14,12 +23,13 @@ export default function HomePage() {
     });
   }, []);
 
+  const classes = useStyles();
   return (
-    <main className={module_styles["Home-page"]}>
+    <main className={classes.homePage}>
       <HomeBanner />
       <AboutUs />
       <OfficersBanner />
-      <ContactBanner/>
+      <ContactBanner />
     </main>
   );
 }
